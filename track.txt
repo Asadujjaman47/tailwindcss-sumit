@@ -71,6 +71,13 @@ V4: Responsive Variants
 	Tailwind Breakpoints
 
 
+-------------------------------------------------
+V5: Hover, focus & other
+	State Variants
+
+
+--------------------------------------------------
+
 
 
 
