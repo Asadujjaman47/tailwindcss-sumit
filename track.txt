@@ -1,3 +1,4 @@
+V2:
 1.
 	> npm init -y
 
@@ -55,4 +56,19 @@ now create index.html:
 	</html>
 
 // now run html file and see: is tailwind working or not?
-	
+
+--------------------------------------------------------------------
+
+V3:
+task: make a card
+html:
+
+
+----------------------------------------------------------------
+
+
+
+
+
+
+
