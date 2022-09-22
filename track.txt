@@ -1,0 +1,58 @@
+1.
+	> npm init -y
+
+2.
+	> npm i -D tailwindcss
+
+// i face problem in lastest version:
+so in install tailwindcss@v2.2.16 version.
+
+3.
+	> npx tailwindcss init
+
+4.
+create src and output folder:
+in src folder:
+	create a filse: tailwind.css
+
+	write tailwind.css:
+		@tailwind base;
+		@tailwind components;
+		@tailwind utilities;
+
+
+5.
+create .vscode/settings.json:
+		{
+			"css.validate": false,
+			"tailwindCSS.emmetCompletions": true
+		}
+
+6.		
+package.json > scripts:
+	"build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+
+7.
+	> npm run build
+
+// now output file is ready
+
+
+8.
+now create index.html:
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tailwind Project</title>
+-->		<link rel="stylesheet" href="./output/tailwind.css">
+	</head>
+	<body>
+		    <div class="w-32 h-32 bg-gray-900 m-12 text-white">Hello</div>
+	</body>
+	</html>
+
+// now run html file and see: is tailwind working or not?
+	
