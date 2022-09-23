@@ -430,11 +430,14 @@ tailwind.config.js:
 
 
 
-
-
-
-
 // DEFAULT: likhay set korle, just nam ta dhore call korle e hobe
+
+
+-----------------------------------------------------------
+
+V17: Extend Variants
+
+some problem rise!
 
 
 
