@@ -152,7 +152,71 @@ if want forcefully apply p:
 ->		@apply p-2;
 	}
 
+---------------------------------------------------------------
+
+V8: @layer Directive
+	Tailwind 
+
+
+// component layer:
+src > tailwind.css:
+
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+ekhane tailwind layer er jonno utilities ke sobar nichay rakbo:
+
+	@tailwind base;
+	@tailwind components;
+
+
+	custom component
+
+
+->	@tailwind utilities;
+	
 
 
 
+
+// better approach:
+
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+->	@layer components{
+		
+		/* group utilities */
+		// custom component
+	}
+
+
+
+// base layer:
+
+	@layer base {
+		h1{
+			@apply text-2xl;
+		}
+	}
+
+
+// utilities layer:
+// custom class:
+
+	@layer utilities {
+		.text-body {
+			font-size: 12px;
+		}
+	}
+
+
+summery:
+	components: custom components
+	base: core base change
+	utilities: self utilities
+
+-------------------------------------------
 
