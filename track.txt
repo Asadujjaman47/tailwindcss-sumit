@@ -409,6 +409,35 @@ output/tailwind.css:
 		}
 	}
 
+-------------------------------------------------
+
+V16: Extend Theme:
+
+tailwind.config.js:
+	theme er extend er modde likle r override korbe na, shate add korbe,
+
+	extend er baire likle, merge korar jaygay, replace korbe,
+
+	theme: {
+		extend: {
+			screens: {
+				sm: '540px',
+				lg: '1000px',
+				'4k': '2560px'
+			},
+		},
+	},
+
+
+
+
+
+
+
+// DEFAULT: likhay set korle, just nam ta dhore call korle e hobe
+
+
+
 
 
 
