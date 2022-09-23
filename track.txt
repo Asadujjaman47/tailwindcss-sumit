@@ -250,4 +250,16 @@ order maintain:
 
 ---------------------------------------------------------------
 
+V10: @responsive & 
+	@screen Directives 
+
+
+src\tailwind.css:
+
+@responsive {
+    .bg-gradient-brand {
+        background-image: linerar-gradient(blue, green);
+    }
+}
+
 

@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities; */
 
-@variants hover, focus {
-    .rotate-0 {
-        transform: rotate(0deg);
+@responsive {
+    .bg-gradient-brand {
+        background-image: linerar-gradient(blue, green);
     }
+}
+
+@screen sm {
+    .bg-gradient-brand {
+        background-image: linerar-gradient(red, green);
+    }
+
 }

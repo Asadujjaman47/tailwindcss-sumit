@@ -2,14 +2,42 @@
 @tailwind components;
 @tailwind utilities; */
 
-.rotate-0 {
-  transform: rotate(0deg);
+.bg-gradient-brand {
+  background-image: linerar-gradient(blue, green);
 }
 
-.hover\:rotate-0:hover {
-  transform: rotate(0deg);
+@media (min-width: 640px) {
+  .bg-gradient-brand {
+    background-image: linerar-gradient(red, green);
+  }
 }
 
-.focus\:rotate-0:focus {
-  transform: rotate(0deg);
+@media (min-width: 640px) {
+  .sm\:bg-gradient-brand {
+    background-image: linerar-gradient(blue, green);
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:bg-gradient-brand {
+    background-image: linerar-gradient(blue, green);
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:bg-gradient-brand {
+    background-image: linerar-gradient(blue, green);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:bg-gradient-brand {
+    background-image: linerar-gradient(blue, green);
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:bg-gradient-brand {
+    background-image: linerar-gradient(blue, green);
+  }
 }
