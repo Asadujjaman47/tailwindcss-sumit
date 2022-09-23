@@ -271,3 +271,19 @@ tailwind.config.js > theme:
 
 --------------------------------------------------------
 
+V12: Tailwind Configurations 
+
+	purge = jekhane jekhane Tailwind use korsi, sai path/file 
+
+	// color override/ custom color
+	theme: {
+		extend: {
+			colors: {
+				myColor: {
+					300: "#D5D5D5",
+				},
+			},
+		},
+	},
+
+ 
