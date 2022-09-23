@@ -220,3 +220,34 @@ summery:
 
 -------------------------------------------
 
+V9: Tailwind @Variants
+	Directive
+
+
+index.html:
+ 	<div class="hover:rotate-0">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consectetur laudantium, corrupti nostrum atque fugit fuga dignissimos eos provident culpa sit vero facilis totam dolores ratione, quisquam in tempora ad.
+    </div>
+
+
+
+src/tailwind.css:
+->	@variants hover {
+		.rotate-0 {
+			transform: rotate(0deg);
+		}
+	}
+
+
+
+order maintain:
+@variants hover, focus {
+    .rotate-0 {
+        transform: rotate(0deg);
+    }
+}
+
+
+---------------------------------------------------------------
+
+
