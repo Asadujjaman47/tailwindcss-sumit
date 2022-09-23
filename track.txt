@@ -111,4 +111,11 @@ stacking variant order: responsive:dark:state
 
 
 
+mannually dark mode:
+	<html class="dark"></html>
+
+--------------------------------------------
+
+
+
 
