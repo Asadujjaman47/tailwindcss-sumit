@@ -59,7 +59,6 @@ now create index.html:
 // now run html file and see: is tailwind working or not?
 
 --------------------------------------------------------------------
-
 V3: Tailwind Utility-First
 	Design Approach
 task: make a card
@@ -77,10 +76,36 @@ V5: Hover, focus & other
 
 
 --------------------------------------------------
+V6: Dark Mode
+	Tailwind Variants
+
+dark mode enable:
+	(bydefault dark mode off kora thake)
+
+	> npm run build
+			// on thaka lagbe
+	tailwind.config.js:
+  		darkMode: "media", // or 'media' or 'class
+
+method 1:
+	// device preference kore dark or light mode hobe 
+
+method 2:
+	// use a button for dark or light
+	// class use korte hobe
+  		darkMode: "class", // or 'media' or 'class
+
+
+html:
+// dark mode korar jonno:
+
+<body class="dark:bg-gray-900">
+
+	// evabe ja ja change kora lagye ta korbo
 
 
 
-
+stacking variant order: responsive:dark:state 
 
 
 
