@@ -315,3 +315,61 @@ V12: Tailwind Configurations
 
 => r framework e postcss enviroment thakele evabe tailwind ke intregrate kore use korte pari. (postcss postcss-cli autoprefixer)
 
+
+------------------------------------------------------
+
+V14: Tailwind JIT 
+	Just in thime Mode
+
+	version 2 to now
+
+	JIT
+		tailwind ke onak kom time e compile kore.
+
+process for JIT enable:
+
+1. tailwind.config.js:
+	module.exports = {
+  		mode: "jit",
+		.
+		.
+		.
+	}
+
+2. purge:
+	i. create folder public\html:
+		move here index.html file
+	
+	ii. in tailwind.config.js\purge:
+		a. only for html file:
+			module.exports = {
+				mode: "jit",
+				purge: [
+					"/.public/**/*.html"
+				],
+
+
+		b. html and js file:
+			module.exports = {
+			mode: "jit",
+			purge: [
+				"./public/**/*.{html,js}"
+			],
+
+
+3.
+	> npm run build
+
+// ekhon html e file e class name likle e 
+	run time e (on demand) generate hobe,
+
+
+	// kintu html e class remove korle,
+		output file e remove hobe na,
+
+	eke vabe fix korbO:
+		just tailwind.config.js file ke save dibo
+
+
+
+
