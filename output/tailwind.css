@@ -590,12 +590,27 @@ video {
   display: none;
 }
 
-.text-body {
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+.btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 540px) {
+  .btn {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .btn {
+    text-align: right;
+  }
+}
+
+@media (min-width: 540px) {
   .sm\:hover\:text-red-800:hover {
     --tw-text-opacity: 1;
     color: rgba(153, 27, 27, var(--tw-text-opacity));

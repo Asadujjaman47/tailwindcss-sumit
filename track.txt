@@ -370,6 +370,46 @@ process for JIT enable:
 	eke vabe fix korbO:
 		just tailwind.config.js file ke save dibo
 
+----------------------------------------------------
+
+V15: Theme Section:
+
+
+	// tailwind er core jinish ke theme er modde change korte parbo
+
+
+
+example: default screen size sm ke 540 korbo:
+
+src/tailwind.css:
+	.btn {
+		@apply text-sm text-center bg-blue-600 sm:text-left lg:text-right;
+	}	
+
+tailwind.config.js:
+		
+		theme: {
+			screens: {
+			sm: '540px',
+			lg: '1000px',
+			'4k': '2560px'
+			},
+
+		}
+
+
+> npm run build
+
+
+output/tailwind.css:
+	// eta automatically hobe:
+	@media (min-width: 540px) {
+		.btn {
+			text-align: left
+		}
+	}
+
+
 
 
 

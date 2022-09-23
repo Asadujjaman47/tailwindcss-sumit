@@ -5,13 +5,13 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {
-      colors: {
-        myColor: {
-          300: "#D5D5D5",
-        },
-      },
+    screens: {
+      sm: '540px',
+      lg: '1000px',
+      '4k': '2560px'
     },
+
+    extend: {},
   },
   variants: {
     extend: {},
