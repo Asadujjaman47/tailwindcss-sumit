@@ -286,4 +286,32 @@ V12: Tailwind Configurations
 		},
 	},
 
- 
+ -------------------------------------------------------
+
+ V13: PostCSS Installation:
+
+1.
+	> npm i postcss postcss-cli autoprefixer
+
+2.
+	> npx tailwindcss init -p
+		// it will create config file
+		// r postcss er config er modde tailwind ke plug in hisabe nibe
+
+3. now build
+	// package.json > scripts > builds:
+
+		"build-p": "postcss ./src/tailwind.css -o ./output/tailwind.css -w"
+
+4. 
+	> npm run build-p
+
+5. now we can write in src/tailwind.css
+	and it excute in output/tailwind.css
+
+
+
+=> row project(without any framework) e tailwind cli use korte pari.
+
+=> r framework e postcss enviroment thakele evabe tailwind ke intregrate kore use korte pari. (postcss postcss-cli autoprefixer)
+

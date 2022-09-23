@@ -2,15 +2,10 @@
 @tailwind components;
 @tailwind utilities; */
 
-@responsive {
-    .bg-gradient-brand {
-        background-image: linerar-gradient(blue, green);
-    }
+.text-body {
+    font-size: 2rem;
 }
 
-@screen sm {
-    .bg-gradient-brand {
-        background-image: linerar-gradient(red, green);
-    }
-
+input::placeholder {
+    color: gray;
 }
